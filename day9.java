@@ -1,10 +1,9 @@
 public class Day9 {
     public static void main(String[] args) {
         // Deklarasi + Inisialisasi
-        int umur = 18;  // deklarasi (int) + inisialisasi (18)
-
-        System.out.println("Umur awal: " + umur);
-
+        // deklarasi (int) + inisialisasi (18)
+        int umur ;  
+        umur = 18;
         // Update nilai variabel
         umur = 19;
 
