@@ -25,6 +25,3 @@ public class day12 {
         System.out.printf("IPK : %.2f\n", ipk); // %.2f : tampilkan 2 angka di belakang koma
     }
 }
-
-
-berikan output dari kodingan ini jangan diubah
