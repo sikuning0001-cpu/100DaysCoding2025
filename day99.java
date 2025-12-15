@@ -1,24 +1,24 @@
 import java.util.Scanner;
 
-public class BilanganPrima {
+public class DeretPrima {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Masukkan angka: ");
+        System.out.print("Masukkan nilai n: ");
         int n = sc.nextInt();
 
-        int pembagi = 0;
+        for (int i = 2; i <= n; i++) {
+            int pembagi = 0;
 
-        for (int i = 1; i <= n; i++) {
-            if (n % i == 0) {
-                pembagi++;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    pembagi++;
+                }
             }
-        }
 
-        if (pembagi == 2) {
-            System.out.println("Bilangan Prima");
-        } else {
-            System.out.println("Bukan Bilangan Prima");
+            if (pembagi == 2) {
+                System.out.print(i + " ");
+            }
         }
     }
 }
